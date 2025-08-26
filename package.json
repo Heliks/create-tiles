@@ -1,0 +1,28 @@
+{
+  "name": "create-tiles",
+  "version": "1.0.0",
+  "bin": {
+    "create-tiles": "./dist/index.js"
+  },
+  "type": "module",
+  "files": [
+    "dist",
+    "templates"
+  ],  
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.11.0",
+    "fs-extra": "^11.3.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^24.3.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
